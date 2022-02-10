@@ -24,6 +24,8 @@ beide maken gebruik van tkinter library/module/framework of iets dergelijks welk
 ps. ik heb géén idee waarom ik een "__pycache__" folder in de repo heb. Maar ik heb het idee dat ik ergens geheugen niet vrij geef of iets dergelijks.
 maar dat valt simpel te googlen. 
 
+edit: gegoogled wat "__pycache__" is, kan voor errors zorgen. Voor de zekerheid een keer gedelete. maar mocht niet baten voor het probleem :( 
+
 
 ### componenten ###
 De app bestaat op het moment uit:
