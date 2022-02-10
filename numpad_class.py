@@ -23,8 +23,9 @@ class Numpad_buttons:
             elif name == "Del":
                 button.configure(command=lambda: delete_button(root))
             else:
-                button.configure(command=lambda: self.append_letter(button['text'], root))
-                print(name)
+                button.configure(
+                    command=lambda: self.append_letter(button['text'], root))
+                print(name)  # deze print wel gewoon each name in button list.
             x += 1
 
             if x > 3:
@@ -32,6 +33,6 @@ class Numpad_buttons:
                 x = 1
 
     def append_letter(self, text, root):
-        print(text)
-        self.entry = root.focus_get()
-        self.entry.insert("end", text)
+        print(text)  # Deze zou de text van de knop moeten weergeven.
+        self.entry = root.focus_get()  # maar print altijd "test"
+        self.entry.insert("end", text)  # dat is de laatste in de list. 
