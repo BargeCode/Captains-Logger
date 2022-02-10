@@ -3,6 +3,18 @@ import serial
 import time
 import csv
 
+
+"""
+
+Op het werk heb ik een computer met een GPS aangesloten op een com port.
+Dit stukje schrijft die gegevens weg in een CSV.
+
+Ik ben van plan om dit via geofencing dus te gaan gebruiken uit eindelijk,
+i.p.v. handmatig elke sector te starten en te stoppen.
+
+"""
+
+
 ser = serial.Serial('COM8', baudrate=2400)
 ser.flushInput()
 

@@ -1,12 +1,15 @@
 """
 
-This is the voyage class
+Hier wordt de voyage class ge initieerd.
+Dit is een combo van een textbox + label,
+
+ook dit wordt a.d.v. een list met strings gemaakt.
 
 """
 
 
 from tkinter import CENTER, W, E, Frame, StringVar, ttk, Button
-from test_button import testbutton
+
 
 
 class Voyage:

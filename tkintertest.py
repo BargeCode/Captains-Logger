@@ -1,5 +1,11 @@
 import tkinter as tk
 
+"""
+
+Hier doet ik niks mee, had ik van het web gekopieerd als voorbeeld.
+
+"""
+
 
 class Test():
     def __init__(self):
