@@ -1,5 +1,5 @@
 import time
-from tkinter import CENTER, N, W, E, S, StringVar, Tk, ttk
+from tkinter import CENTER, DISABLED, N, W, E, S, StringVar, Tk, ttk
 
 
 """
@@ -24,11 +24,20 @@ class Sector:
         self.length = self.kmr_start - self.kmr_end  # lengte van sector.
         self.start_time = None
         self.stop_time = None
+        self.sector_result = StringVar()
         self.sector_name_lbl = ttk.Label(  # label
             frame,
             textvariable=self.s_name,
             anchor=(CENTER),
-            width=20).grid(column=0, row=sector_number)
+            width=20).grid(
+                column=0, row=sector_number)
+        self.sector_result_lbl = ttk.Label(
+            frame,
+            textvariable=self.sector_result,
+            anchor=(CENTER),
+            width=20
+            ).grid(
+                column=2, row=sector_number)
         self.button = ttk.Button(  # button
             frame,
             text="Starten",
@@ -45,6 +54,8 @@ class Sector:
         self.time_passed = self.stop_time - self.start_time
         self.time_passed = self.time_passed / 60 / 60  # seconds to hours.
         self.sector_speed = "{:.2f}".format(self.length / self.time_passed)
+        self.sector_result.set(self.sector_speed + " Km/h")
+        self.button['state'] = DISABLED
 
     def button_press(self):  # button press voor start/stop van registratie
         if self.start_time is None:  # start registratie als waarde = none

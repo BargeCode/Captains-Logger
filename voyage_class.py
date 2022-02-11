@@ -18,12 +18,12 @@ class Voyage:
         self.voy_tonnes = StringVar()
         self.data_label_ls = ["Voyage ID", "Tonnes", "Draught", "Water level"]
         self.data_entry_box_col = []
-        x = 1
-        y = 1
+        x = 0
+        y = 0
         for data_label in self.data_label_ls:
-            if y == 3:
+            if y == 2:
                 x += 2
-                y = 1
+                y = 0
             ttk.Label(
                 frame,
                 text=data_label
