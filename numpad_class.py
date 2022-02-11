@@ -34,11 +34,11 @@ class Numpad_buttons:
             else:
                 button.configure(
                     command=lambda: self.append_letter(button['text'], root))
-                print(name)  # print elke name in list in cli
+                print(name)  # print elke letter in list in cli
             x += 1
 
             if x > 3:  # hier wordt er na 3 knoppen op een regel,
-                y += 1  # de 4de regel toegewezen.
+                y += 1  # de volgende regel toegewezen.
                 x = 1
 
     """
