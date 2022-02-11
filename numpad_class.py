@@ -8,7 +8,7 @@ Het numpad wordt uiteindelijk 0-9 + 4 "tekst" knoppen + een "delete" knop.
 button_list is de lijst met tekst die op de knoppen moet komen.
 
 """
-
+# test
 
 class Numpad_buttons:
     def __init__(self, button_list, voyage, frame, root) -> None:
