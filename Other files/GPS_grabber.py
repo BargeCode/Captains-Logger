@@ -5,21 +5,17 @@ import csv
 
 
 """
-
-Op het werk heb ik een computer met een GPS aangesloten op een com port.
-Dit stukje schrijft die gegevens weg in een CSV.
-
-Ik ben van plan om dit via geofencing dus te gaan gebruiken uit eindelijk,
-i.p.v. handmatig elke sector te starten en te stoppen.
-
+On board our vessel we have a computer with a GPS antenna hooked up on a
+COMport. With the code below, it will filter incoming data on length because
+GPRMC data is the longest of the data it sends trough the COMport.
+I will try to apply some geo-fencing so that it knows which sector is active.
 """
 
 
 ser = serial.Serial('COM8', baudrate=2400)
 ser.flushInput()
 
-file = r"C:\Users\Alsace-Tresco\Documents\Voyage-Journal-main"
-file = file + r"\Voyage-Journal-main\GPSlog.txt"
+file = r"C:\Users\Alsace-Tresco\Documents\Voyage-Journal-main\Voyage-Journal-main\GPSlog.txt"
 
 while True:
     try:
@@ -30,9 +26,8 @@ while True:
 
             with open(file, "a") as log:
                 log.writelines(decoded_bytes.rstrip('\n'))
-        print("Logging started")
-        print("Press Cntrl / cmd + C to interrupt.")
+
     except:  # noqa (bare except)
         log.close()
-        print("Logging stopped")
+        print("Logging stopped for some reason.")
         break
