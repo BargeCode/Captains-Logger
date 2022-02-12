@@ -1,3 +1,10 @@
+## update
+probleem verholpen door de loop aan te passen.
+Ik loopte door een list en wees aan geinitieerde hetzelfde item aan.
+En het laatste item op de list blijft dan aangewezen. en alle buttons kregen dezelfde "laatste item" daardoor aangewezen.
+
+
+
 ### intro
 
 Zoals al verteld,
