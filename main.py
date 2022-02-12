@@ -4,15 +4,16 @@ from voyage_class import Voyage
 from numpad_class import Numpad
 
 
-root = Tk()  # initieerd het venster.
+"""
+This is main.py. This file will run the application.
+"""
+
+# Initiates main window
+root = Tk()
 root.title("Captains-logger")
 root.columnconfigure(0, weight=1, minsize=5)
 root.rowconfigure(0, weight=1, minsize=5)
 
-"""
-hier onder wordt een raster gevormd. waarop alle
-objecten geplaatst worden a.d.v. rows en columns
-"""
 
 # window frame
 mainwindow_frame = ttk.Frame(root, padding="3 3 12 12")
@@ -34,7 +35,8 @@ numpad_frame.grid(
     column=4, columnspan=3,
     row=0, rowspan=6,
     sticky=(N, E))
-numpad = Numpad(numpad_frame, root)   # alternatief
+
+numpad = Numpad(numpad_frame, root)  # init the numpad(+ buttons)
 
 
 # sector frame
@@ -44,10 +46,11 @@ sector_frame.grid(
     row=3, rowspan=3,
     sticky=(S, W))
 
+# Initiates each sector.
 sector_1 = Sector("Sector A", 200, 150, 1, sector_frame)  # init sector A
 sector_2 = Sector("Sector B", 150, 75, 2, sector_frame)  # init sector B
-sector_3 = Sector("Sector C", 75, 25, 3, sector_frame)  # enz. enz.
-sector_4 = Sector("Sector D", 25, 10, 4, sector_frame)
+sector_3 = Sector("Sector C", 75, 25, 3, sector_frame)  # etc.
+sector_4 = Sector("Sector D", 25, 10, 4, sector_frame)  # etc.
 
 
 root.mainloop()
