@@ -1,4 +1,4 @@
-### intro ###
+### intro
 
 Zoals al verteld,
 
@@ -27,7 +27,7 @@ maar dat valt simpel te googlen.
 edit: gegoogled wat "__pycache__" is, kan voor errors zorgen. Voor de zekerheid een keer gedelete. maar mocht niet baten voor het probleem :( 
 
 
-### componenten ###
+### componenten
 De app bestaat op het moment uit:
 Main.py ( = overigens gewoon werkend/opstartbaar)
 sector_class.py
@@ -38,7 +38,7 @@ en voor debug en wat dingen testen:
 test_button.py
 
 
-### het probleem ###
+### het probleem
 Het gaat fout bij het schermtoetsenboord.
 Wanneer er op de toets "A" wordt gedrukt en een textbox is geselecteerd;
 spuugt hij "test" neer terwijl dit "A" zou moeten zijn. "test" is de laatste knop in de list.
@@ -57,7 +57,7 @@ deze button (text) zou er voor moeten zorgen dat de inhoud van de textboxen op C
 Alleen het lijkt erop, dat op 1 of andere manier, alle knoppen behalve "Del" de testbutton() method uit de test_button module toegewezen krijgen.
 
 
-### overig ###
+### overig
 de overige bestanden:
 GPS_grabber: werkt maar nog niet met de app. in de toekomst wel de bedoeling. 
 GPSlog.txt: resultaat van GPS_grabber
