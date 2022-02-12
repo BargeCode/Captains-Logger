@@ -11,7 +11,6 @@ ook dit wordt a.d.v. een list met strings gemaakt.
 from tkinter import CENTER, W, E, Frame, StringVar, ttk, Button
 
 
-
 class Voyage:
     def __init__(self, frame) -> None:
         self.voy_id = StringVar()

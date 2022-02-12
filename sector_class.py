@@ -1,16 +1,11 @@
 import time
-from tkinter import CENTER, DISABLED, N, W, E, S, StringVar, Tk, ttk
+from tkinter import CENTER, DISABLED, N, W, E, S, StringVar, ttk
 
 
 """
-
 Dit is de sector class. Voor elke sector (op de rivier) , kan ik dit
-intialiseren en wordt er een button + label getoverd, netjes onder elkaar.
-
-+
-
-verschillende methods voor button_press.
-
+intialiseren en wordt er een button + label getoverd, na 2 rijen,
+kolom opschuiven. Verschillende methods voor s_button_press.
 """
 
 
@@ -41,7 +36,7 @@ class Sector:
         self.button = ttk.Button(  # button
             frame,
             text="Starten",
-            command=self.button_press)
+            command=self.s_button_press)
         self.button.grid(column=1, row=sector_number, sticky=(W, E))
 
     def start_measure(self) -> None:
@@ -57,7 +52,7 @@ class Sector:
         self.sector_result.set(self.sector_speed + " Km/h")
         self.button['state'] = DISABLED
 
-    def button_press(self):  # button press voor start/stop van registratie
+    def s_button_press(self):  # button press voor start/stop van registratie
         if self.start_time is None:  # start registratie als waarde = none
             self.start_measure()
             self.button['text'] = "Gestart"
