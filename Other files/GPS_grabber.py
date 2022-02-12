@@ -1,8 +1,8 @@
-import os
-import serial
-import time
 import csv
+import os
+import time
 
+import serial  # type: ignore (not installed on local machine)
 
 """
 On board our vessel we have a computer with a GPS antenna hooked up on a
@@ -15,7 +15,7 @@ I will try to apply some geo-fencing so that it knows which sector is active.
 ser = serial.Serial('COM8', baudrate=2400)
 ser.flushInput()
 
-file = r"C:\Users\Alsace-Tresco\Documents\Voyage-Journal-main\Voyage-Journal-main\GPSlog.txt"
+file = r"C:\Users\Alsace-Tresco\Documents\Voyage-Journal-main\Voyage-Journal-main\GPSlog.txt"  # noqa (line to long)
 
 while True:
     try:
