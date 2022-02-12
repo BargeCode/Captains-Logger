@@ -1,22 +1,20 @@
-"""
+from tkinter import W, E, StringVar, ttk
 
-Hier wordt de voyage class ge initieerd.
-Dit is een combo van een textbox + label,
-
-ook dit wordt a.d.v. een list met strings gemaakt.
 
 """
-
-
-from tkinter import CENTER, W, E, Frame, StringVar, ttk, Button
-
+This is the Voyage class. It gets initiated by main.py and creates
+for each item in the list a label, and a textbox.
+"""
 
 
 class Voyage:
     def __init__(self, frame) -> None:
         self.voy_id = StringVar()
         self.voy_tonnes = StringVar()
+
+        # The list
         self.data_label_ls = ["Voyage ID", "Tonnes", "Draught", "Water level"]
+
         self.data_entry_box_col = []
         x = 0
         y = 0
