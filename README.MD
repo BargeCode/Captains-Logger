@@ -29,7 +29,7 @@ This isnt that bad. There are a couple of variables.
 # installing this app for you to test or try.
 All you need is Python and pyserial. 
 so install python with your favourit app manager.
-and `pip install pyserial` . That should work.
+and `pip install pyserial` or `pip3 install pyserial` . That should work.
 
 Just know that at this point in time, pyserial isnt neccesary. it works seperatly from the main app. 
 To get it working, hardcode your com or usb port into the code and set the `len()` method for the data you want to catch. The GPS we use on board is spitting out GPRMC and others. I only want the GPRMC since it got everything i need. 
