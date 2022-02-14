@@ -29,10 +29,10 @@ This isnt that bad. There are a couple of variables.
 # installing this app for you to test or try.
 All you need is Python and pyserial. 
 so install python with your favourit app manager.
-and 
-`pip install pyserial` 
-or 
-`pip3 install pyserial`
+and  
+`pip install pyserial`  
+or  
+`pip3 install pyserial`  
 That should work.
 
 Just know that at this point in time, pyserial isnt neccesary. it works seperatly from the main app. 
