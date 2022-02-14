@@ -1,8 +1,5 @@
-import csv
-import os
-import time
 
-import serial  # type: ignore (not installed on local machine)
+import serial
 
 """
 On board our vessel we have a computer with a GPS antenna hooked up on a
