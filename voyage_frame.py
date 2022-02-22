@@ -10,7 +10,11 @@ class Voyage:
         self.own_frame = ttk.Labelframe(
             self.target_frame, text="Voyage details"
         )
-        self.own_frame.grid(column=0, row=0, sticky=(N, W))
+        self.own_frame.grid(
+            column=0, columnspan=4,
+            row=0, rowspan=2,
+            sticky=(N, W)
+            )
 
         self.master = master
         # The list with boxes to create:

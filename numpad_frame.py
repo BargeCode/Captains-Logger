@@ -42,7 +42,7 @@ class Numpad:
                 y += 1
             if not button.isnumeric() and button != 'del':
                 self.special_button_list.append(button)
-                print(button)
+
 
     def disable_special_buttons(self):
         for special_button in self.special_button_list:

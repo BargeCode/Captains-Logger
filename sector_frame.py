@@ -179,7 +179,6 @@ class Individual_sector():
 
             # Show heartbeat assci art.
             sec.result.set('√v^√v^√v^√♥')
-            sec.reset_button['state'] = ACTIVE
 
         elif sec.start_button_text.get() == 'Gestart':
             # Assign for saving the results.
@@ -188,9 +187,10 @@ class Individual_sector():
             # Show time stamp.
             sec.timelbl_lcity.set(time.strftime('%d/%m/%y %H:%M'))
 
-            # Change start_button
+            # Change start_button & reset_button
             sec.start_button_text.set('Gestopt')
             sec.start_button['state'] = DISABLED
+            sec.reset_button['state'] = ACTIVE
 
             # Calculate speed.
             sec.calculate_speed()
