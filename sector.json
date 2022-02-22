@@ -1,0 +1,42 @@
+[
+    {
+        "#": 1,
+        "Name": "Sector 1",
+        "Start": 850,
+        "End": 815,
+        "First City": "Lobith",
+        "Last City": "Wesel",
+        "Time first City": "",
+        "Time last City": ""
+    },
+    {
+        "#": 2,
+        "Name": "Sector 2",
+        "Start": 815,
+        "End": 777,
+        "First City": "Wesel",
+        "Last City": "Duisburg",
+        "Time first City": "",
+        "Time last City": ""
+    },
+    {
+        "#": 3,
+        "Name": "Sector 3",
+        "Start": 777,
+        "End": 740,
+        "First City": "Duisburg",
+        "Last City": "Dusseldorf",
+        "Time first City": "",
+        "Time last City": ""
+    },
+    {
+        "#": 4,
+        "Name": "Sector 4",
+        "Start": 740,
+        "End": 700,
+        "First City": "Dusseldorf",
+        "Last City": "Keulen",
+        "Time first City": "",
+        "Time last City": ""
+    }
+]
